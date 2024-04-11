@@ -15,5 +15,5 @@ jobs:
 
     - name: Exécutez plusieurs commandes
       run: |
-        echo "date"
+        echo "coding-style . ."
 
