@@ -1,9 +1,19 @@
-name : date script
+name: Mon Workflow
 
-on : [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  Explore-Github-Actions:
-    runs-on : ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
+
     steps:
-      -run : date
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Exécutez plusieurs commandes
+      run: |
+        echo "date"
+
